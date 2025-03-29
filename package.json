@@ -1,0 +1,12 @@
+{
+  "name": "daily_tog",
+  "version": "1.0.0",
+  "workspaces": ["apps/frontend", "apps/backend"],
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w apps/frontend\" \"npm run dev -w apps/backend\"",
+    "install-all": "npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}
