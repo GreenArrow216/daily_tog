@@ -1,10 +1,10 @@
 
-import { imagesData } from '../constants'
+import { categoryImages } from '../constants'
 import './categoryList.scss'
 
 const CategoryList = () => {
     return <div>
-    {imagesData.slice(0,3).map((cat, idx) => (
+    {categoryImages.map((cat, idx) => (
       <div
         key={idx}
         className="parallax-section"

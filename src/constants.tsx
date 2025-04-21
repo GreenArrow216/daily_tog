@@ -1,14 +1,31 @@
+import SummerVibes2 from "./assets/Summer Vibes 2.webp";
+import Buildings3 from "./assets/Buildings 3.webp";
+import Cat from "./assets/Cat.webp";
+import BeeAndLavender2 from "./assets/Bee and Lavender 2.webp";
+
+
 export enum CATEGORIES {
   bw = "black&white",
+  street = "street",
+  travel = "travel",
+  animals = "animals",
 }
 
 export type ImagesData = {
   name: string;
-  description: string;
-  tags: string[];
   category: CATEGORIES;
   image_url: string;
+  description?: string;
+  tags?: string[];
 };
+
+export const categoryImages: ImagesData[] = [
+  { name: "Street", category: CATEGORIES.street, image_url: SummerVibes2 },
+  { name: "Black and white", category: CATEGORIES.bw, image_url: Buildings3 },
+  { name: "Travel", category: CATEGORIES.travel, image_url: Cat },
+  { name: "Flora & Fauna", category: CATEGORIES.animals, image_url: BeeAndLavender2 },
+];
+
 export const imagesData: ImagesData[] = [
   {
     name: "Pigeon Lamp",
