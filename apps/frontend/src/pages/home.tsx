@@ -1,5 +1,12 @@
-const Home = () => {
-    return <h1>Home</h1>
-}
+import CategoryList from "../widgets/categoryList";
 
-export default Home
+const Home = () => {
+  return (
+    <div>
+      <h1>Home</h1>
+      <CategoryList />
+    </div>
+  );
+};
+
+export default Home;

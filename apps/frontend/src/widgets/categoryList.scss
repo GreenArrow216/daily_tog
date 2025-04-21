@@ -1,0 +1,17 @@
+.parallax-section {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: 25% 20%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    .category-name {
+      font-size: 3rem;
+      color: white;
+      text-shadow: 0 0 10px rgba(0,0,0,0.7);
+      text-decoration: none;
+    }
+  }
+  
