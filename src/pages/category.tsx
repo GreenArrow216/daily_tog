@@ -8,7 +8,7 @@ const Category = () => {
   return (
     <div>
       <h1>Categories</h1>
-      <Gallery images={images} />
+      <Gallery images={imagesData} />
     </div>
   );
 };
