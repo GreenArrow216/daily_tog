@@ -1,0 +1,17 @@
+.heroText {
+    font-size: 60px;
+    font-weight: 700;
+    max-width: 600px;
+    text-align: left;
+    padding: 10%;
+}
+
+.parallaxSection {
+    height: 100vh;
+    background-attachment: fixed;
+    // background-position: 25% 50%;
+    background-size: cover;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}

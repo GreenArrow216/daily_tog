@@ -3,6 +3,7 @@ export enum CATEGORIES {
   street = "street",
   travel = "travel",
   animals = "animals",
+  none="none"
 }
 
 export type ImagesData = {
@@ -14,6 +15,12 @@ export type ImagesData = {
 };
 
 export const categoryImages: ImagesData[] = [
+  {
+    name: "Gowthaman Ganesan",
+    description: "I'm a photographer cum w",
+    image_url: "https://daily-tog-photo-bucket.s3.us-east-005.backblazeb2.com/Gowthaman+Ganesan.jpg",
+    category: CATEGORIES.none
+  },
   {
     name: "Street",
     category: CATEGORIES.street,

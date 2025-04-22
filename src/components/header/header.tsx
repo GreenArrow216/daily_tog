@@ -1,9 +1,11 @@
-import headerStyles from './header.module.scss'
+import headerStyles from "./header.module.scss";
 
 const Header = () => {
   return (
     <div className={headerStyles.header}>
-      <h2>[ ◉¯] DailyTog</h2>
+      <a href="/">
+        <h2>[ ◉¯] DailyTog</h2>
+      </a>
     </div>
   );
 };
