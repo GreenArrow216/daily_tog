@@ -1,14 +1,28 @@
 import { useParams } from "react-router-dom";
 import Gallery from "../widgets/gallery";
-import { imagesData } from "../constants";
+import { CATEGORIES, imagesData } from "../constants";
 
 const Category = () => {
-  const { name } = useParams();
-  const images = imagesData.filter((img) => img.category === name);
+  const { category } = useParams();
+  const images = imagesData.filter((img) => img.category === category);
+  const categoryHeading = (category: CATEGORIES | string) => {
+    switch (category) {
+      case CATEGORIES.bw:
+        return "Black & White";
+      case CATEGORIES.animals:
+        return "Flora & Fauna";
+      case CATEGORIES.street:
+        return "Street";
+      case CATEGORIES.travel:
+        return "Travel";
+      default:
+        return "Category Name";
+    }
+  };
   return (
     <div>
-      <h1>Categories</h1>
-      <Gallery images={imagesData} />
+      <h1>{categoryHeading(category ?? "no category")}</h1>
+      <Gallery images={images} />
     </div>
   );
 };

@@ -1,15 +1,16 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import Category from "./pages/category";
-import './App.css'
-// import About from './pages/About'
-// import Blog from './pages/Blog'
+import "./App.css";
+import Layout from "./Layout";
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/category/:name" element={<Category />} />
+      <Route path="/" element={<Layout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/category/:category" element={<Category />} />
+      </Route>
     </Routes>
   );
 }

@@ -9,7 +9,7 @@ const Gallery = ({ images }: { images: ImagesData[] }) => {
       >
         <Masonry>
           {images.map((img, idx) => (
-            <img key={idx} src={img.image_url} alt={img.name} style={{ height: '100%', width: '100%' }} />
+            <img key={idx} src={img.image_url} loading="lazy" alt={img.name} style={{ height: '100%', width: '100%', objectFit: "cover" }} />
           ))}
         </Masonry>
       </ResponsiveMasonry>

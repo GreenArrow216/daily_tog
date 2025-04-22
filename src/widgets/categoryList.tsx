@@ -1,5 +1,5 @@
 
-import { categoryImages } from '../constants'
+import { categoryImages } from '../constants.ts'
 import './categoryList.scss'
 
 const CategoryList = () => {
@@ -8,9 +8,9 @@ const CategoryList = () => {
       <div
         key={idx}
         className="parallax-section"
-        style={{ backgroundImage: `url(${cat.image_url})` }}
+        style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.1)),url(${cat.image_url})`, }}
       >
-        <a href={`/category/${encodeURIComponent(cat.name)}`} className="category-name">
+        <a href={`/category/${encodeURIComponent(cat.category)}`} className="category-name">
           {cat.name}
         </a>
       </div>
