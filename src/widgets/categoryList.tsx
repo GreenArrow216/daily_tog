@@ -7,7 +7,7 @@ const CategoryList = () => {
     <div>
       {categoryImages.map((cat, idx) =>
         cat.category === CATEGORIES.none ? (
-          <Hero/>
+          <Hero key={idx} />
         ) : (
           <div
             key={idx}

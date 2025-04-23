@@ -3,9 +3,10 @@
   margin: 0 auto;
   text-align: center;
   font-family: "Stick No Bills", sans-serif;
-  
+  background-color: #b3b3b3;
 }
 
 #root h1,h2,h3,h4,h5,h6,a,p {
   font-weight: 200;
+  margin:0
 }

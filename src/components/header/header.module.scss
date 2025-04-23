@@ -1,6 +1,26 @@
 .header {
-    text-align: left;
-    padding: 0 10px;
-    position: absolute;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  a {
+    color: white;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      margin-right: 10px;
+    }
+  }
+  .additionalLinks {
+    display: flex;
+    h3 {
+      margin-right: 30px;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
 }
