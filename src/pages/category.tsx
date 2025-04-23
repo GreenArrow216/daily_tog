@@ -10,6 +10,7 @@ const Category = () => {
     src: img.image_url,
     width: parseInt(img.aspectRatio? img.aspectRatio.split(":")[0]:'1'),
     height: parseInt(img.aspectRatio ? img.aspectRatio.split(":")[1] : '1'),
+    name: img.name
   }));
 
   

@@ -1,10 +1,12 @@
 import justifiedLayout from "justified-layout";
 import { useEffect, useState } from "react";
+import ImageFade from "./imageFade";
 
 interface Image {
   src: string;
   width: number;
   height: number;
+  name: string;
 }
 
 interface Props {
@@ -41,17 +43,14 @@ const PhotoGallery = ({
       }}
     >
       {layout?.boxes.map((box, i: number) => (
-        <img
+        <ImageFade
           key={i}
           src={images[i].src}
-          style={{
-            position: "absolute",
-            top: box.top,
-            left: box.left,
-            width: box.width,
-            height: box.height,
-            objectFit: "cover",
-          }}
+          alt={images[i].name}
+          top={box.top}
+          left={box.left}
+          width={box.width}
+          height={box.height}
         />
       ))}
     </div>

@@ -3,9 +3,13 @@ import { useState } from "react";
 interface ImageFadeProps {
   src: string;
   alt: string;
+  top: number
+  left: number
+  height: number
+  width: number
 }
 
-const ImageFade = ({ src, alt }: ImageFadeProps) => {
+const ImageFade = ({ src, alt, top, left, width, height }: ImageFadeProps) => {
   const [loaded, setLoaded] = useState(false);
 
   return (
@@ -15,9 +19,11 @@ const ImageFade = ({ src, alt }: ImageFadeProps) => {
       loading="lazy"
       onLoad={() => setLoaded(true)}
       style={{
-        // aspectRatio:index > length - ? '3/2' : 'auto',
-        height: "100%",
-        width: "100%",
+        top,
+        left,
+        height,
+        width,
+        position:'absolute',
         objectFit: "cover",
         opacity: loaded ? 1 : 0,
         transform: loaded ? "scale(1)" : "scale(1.02)",
