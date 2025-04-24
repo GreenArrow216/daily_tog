@@ -3,8 +3,12 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+  color: black;
   a {
-    color: white;
+    color: black;
+    h2 {
+      font-weight: 700;
+    }
   }
   .logo {
     display: flex;
@@ -20,6 +24,28 @@
       margin-right: 30px;
       &:last-child {
         margin: 0;
+      }
+    }
+  }
+  @media screen and (max-width: 480px) {
+    padding: 5px 10px;
+    h1 {
+      font-size: 32px;
+    }
+    .logo {
+      font-size: 12px;
+      img {
+        width: 22px;
+        margin-right:5px ;
+      }
+    }
+
+    .additionalLinks {
+      h3 {
+        margin-right: 10px;
+        &:last-child {
+          margin: 0;
+        }
       }
     }
   }

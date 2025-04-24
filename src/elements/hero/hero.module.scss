@@ -4,14 +4,26 @@
     max-width: 600px;
     text-align: left;
     padding: 10%;
+
+    @media screen and (max-width: 480px) {
+        font-size: 30px;
+        max-width: 300px;
+        padding: 5%;
+        text-align: center;
+    }
 }
 
 .parallaxSection {
     height: 100vh;
     background-attachment: fixed;
-    // background-position: 25% 50%;
     background-size: cover;
     display: flex;
     justify-content: left;
     align-items: center;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 100%), url(https://daily-tog-photo-bucket.s3.us-east-005.backblazeb2.com/Gowthaman+Ganesan.jpg);
+    @media screen and (max-width: 480px) {
+        background-position: 90% 0%;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://daily-tog-photo-bucket.s3.us-east-005.backblazeb2.com/Gowthaman+Ganesan.jpg);
+        justify-content: center;
+    }
 }

@@ -36,7 +36,7 @@ export const categoryImages: ImagesData[] = [
       "https://daily-tog-photo-bucket.s3.us-east-005.backblazeb2.com/black-and-white/Buildings+3.webp",
   },
   {
-    name: CATEGORIES.travel,
+    name: "Travel",
     category: CATEGORIES.travel,
     image_url:
       "https://daily-tog-photo-bucket.s3.us-east-005.backblazeb2.com/travel/Boat+sunset.webp",

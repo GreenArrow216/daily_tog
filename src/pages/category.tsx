@@ -14,12 +14,10 @@ const Category = () => {
     }));
 
   return (
-    <div>
-      <PhotoGallery
-        images={filteredImages}
-        containerWidth={window.innerWidth - 15}
-      />
-    </div>
+    <PhotoGallery
+      images={filteredImages}
+      containerWidth={window.innerWidth}
+    />
   );
 };
 

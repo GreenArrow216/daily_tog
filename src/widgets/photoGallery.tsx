@@ -38,7 +38,7 @@ const PhotoGallery = ({
     <div
       style={{
         position: "relative",
-        width: containerWidth,
+        width: '100%',
         height: layout?.containerHeight || 0,
       }}
     >
