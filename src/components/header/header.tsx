@@ -16,8 +16,8 @@ const Header = () => {
       </a>
       <h1>{catTitle}</h1>
       <div className={headerStyles.additionalLinks}>
-        <h3>Blog</h3>
-        <h3>Gears</h3>
+        {/* <h3>Blog</h3>
+        <h3>Gears</h3> */}
       </div>
     </div>
   );
