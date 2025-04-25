@@ -4,49 +4,61 @@
   justify-content: space-between;
   padding: 20px;
   color: black;
-  a {
-    color: black;
-    h2 {
-      font-weight: 700;
-    }
-  }
   .logo {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: black;
+    h2 {
+      font-weight: 700;
+      margin-top: 3px;
+    }
     img {
       margin-right: 10px;
     }
   }
   .additionalLinks {
     display: flex;
-    h3 {
-      margin-right: 30px;
-      &:last-child {
-        margin: 0;
-      }
+    img {
+      width: 40px;
     }
+    // h3 {
+    //   margin-right: 30px;
+    //   &:last-child {
+    //     margin: 0;
+    //   }
+    // }
   }
   @media screen and (max-width: 480px) {
     padding: 5px 10px;
+    justify-content: center;
+    position: relative;
+    min-height: 30px;
     h1 {
       font-size: 32px;
     }
     .logo {
       font-size: 12px;
+      position: absolute;
+      left: 10px;
       img {
         width: 22px;
-        margin-right:5px ;
+        margin-right: 5px;
       }
     }
 
     .additionalLinks {
-      h3 {
-        margin-right: 10px;
-        &:last-child {
-          margin: 0;
-        }
+      position: absolute;
+      right: 10px;
+      img {
+        width: 25px;
       }
+      // h3 {
+      //   margin-right: 10px;
+      //   &:last-child {
+      //     margin: 0;
+      //   }
+      // }
     }
   }
 }
