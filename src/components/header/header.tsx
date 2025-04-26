@@ -23,8 +23,6 @@ const Header = () => {
       >
         <img src={Instagram} alt={"instagram.svg"} />
       </a>
-      {/* <h3>Blog</h3>
-        <h3>Gears</h3> */}
     </div>
   );
 };
