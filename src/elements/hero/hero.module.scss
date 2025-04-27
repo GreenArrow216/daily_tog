@@ -1,29 +1,78 @@
-.heroText {
+.heroContent {
+  padding: 10%;
+  .heroText {
     font-size: 60px;
     font-weight: 700;
     max-width: 600px;
     text-align: left;
-    padding: 10%;
 
     @media screen and (max-width: 480px) {
-        font-size: 30px;
-        max-width: 300px;
-        padding: 5%;
-        text-align: center;
+      font-size: 30px;
+      max-width: 300px;
+      padding: 5%;
+      text-align: center;
     }
+  }
+
+  .socialLinks {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    transition: all 0.3s;
+
+    svg {
+      height: 40px;
+      width: 40px;
+
+      @media screen and (max-width: 480px) {
+        height: 25px;
+        width: 25px;
+      }
+    }
+
+    :global(a.Instagram:hover svg) {
+      transition: all 0.3s;
+      stroke: #e1306c;
+    }
+
+    :global(a.LinkedIn:hover svg) {
+      transition: all 0.3s;
+      stroke: #0077b5;
+    }
+
+    :global(a.Mail:hover svg) {
+      transition: all 0.3s;
+      stroke: #d44638;
+    }
+
+    :global(a.Download:hover svg) {
+      transition: all 0.3s;
+      stroke: grey;
+    }
+  }
 }
 
 .parallaxSection {
-    height: 100vh;
-    background-attachment: fixed;
-    background-size: cover;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 100%), url(https://daily-tog-photo-bucket.s3.us-east-005.backblazeb2.com/Gowthaman+Ganesan.jpg);
-    @media screen and (max-width: 480px) {
-        background-position: 90% 0%;
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://daily-tog-photo-bucket.s3.us-east-005.backblazeb2.com/Gowthaman+Ganesan.jpg);
-        justify-content: center;
-    }
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1) 30%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url(https://daily-tog-photo-bucket.s3.us-east-005.backblazeb2.com/Gowthaman+Ganesan.jpg);
+  @media screen and (max-width: 480px) {
+    background-position: 90% 0%;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url(https://daily-tog-photo-bucket.s3.us-east-005.backblazeb2.com/Gowthaman+Ganesan.jpg);
+    justify-content: center;
+  }
 }

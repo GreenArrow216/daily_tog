@@ -2,7 +2,6 @@ import { useParams } from "react-router-dom";
 import headerStyles from "./header.module.scss";
 import { categoryImages } from "../../constants";
 import Camera from "../../assets/camera.svg";
-import Instagram from "../../assets/instagram.svg";
 
 const Header = () => {
   const { category } = useParams();
@@ -16,13 +15,6 @@ const Header = () => {
         <h2>DailyTog</h2>
       </a>
       <h1>{catTitle}</h1>
-      <a
-        href="https://www.instagram.com/daily_tog?igsh=MWV2aDZpZmtsbHZxMQ=="
-        target="_blank"
-        className={headerStyles.additionalLinks}
-      >
-        <img src={Instagram} alt={"instagram.svg"} />
-      </a>
     </div>
   );
 };
