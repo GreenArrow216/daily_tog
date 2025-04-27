@@ -41,7 +41,12 @@ const Hero = () => {
         </p>
         <div className={heroStyles.socialLinks}>
           {socialLinks.map((platform, i) => (
-            <a key={i} href={platform.link} className={platform.name} target="_blank">
+            <a
+              key={i}
+              href={platform.link}
+              className={platform.name}
+              target="_blank"
+            >
               {platform.icon}
             </a>
           ))}
