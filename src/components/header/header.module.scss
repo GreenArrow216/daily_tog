@@ -1,14 +1,18 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 20px;
   color: black;
+  position: relative;
+  min-height: 40px;
   .logo {
     display: flex;
     align-items: center;
     justify-content: center;
     color: black;
+    position: absolute;
+    left: 10px;
     h2 {
       font-weight: 700;
       margin-top: 3px;
@@ -22,12 +26,6 @@
     img {
       width: 40px;
     }
-    // h3 {
-    //   margin-right: 30px;
-    //   &:last-child {
-    //     margin: 0;
-    //   }
-    // }
   }
   @media screen and (max-width: 480px) {
     padding: 5px 10px;
@@ -53,12 +51,6 @@
       img {
         width: 25px;
       }
-      // h3 {
-      //   margin-right: 10px;
-      //   &:last-child {
-      //     margin: 0;
-      //   }
-      // }
     }
   }
 }

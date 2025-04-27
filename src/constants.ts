@@ -39,7 +39,7 @@ export const categoryImages: ImagesData[] = [
     name: "Travel",
     category: CATEGORIES.travel,
     image_url:
-      "https://daily-tog-photo-bucket.s3.us-east-005.backblazeb2.com/travel/Boat+sunset.webp",
+      "https://daily-tog-photo-bucket.s3.us-east-005.backblazeb2.com/travel/Cat.webp",
   },
   {
     name: "Flora & Fauna",
@@ -511,13 +511,6 @@ export const imagesData: ImagesData[] = [
     image_url:
       "https://daily-tog-photo-bucket.s3.us-east-005.backblazeb2.com/black+and+white/Juxtaposed+Pigeon.webp",
     aspectRatio: "1229:1920",
-  },
-  {
-    name: "Leading-Line-Couples",
-    category: CATEGORIES.bw,
-    image_url:
-      "https://daily-tog-photo-bucket.s3.us-east-005.backblazeb2.com/street/Leading+line+to+the+couples.webp",
-    aspectRatio: "3:2",
   },
   {
     name: "Leading-Line-Person-2",

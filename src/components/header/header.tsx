@@ -15,6 +15,7 @@ const Header = () => {
         <h2>DailyTog</h2>
       </a>
       <h1>{catTitle}</h1>
+      <div/>
     </div>
   );
 };

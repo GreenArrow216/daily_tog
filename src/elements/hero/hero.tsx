@@ -26,7 +26,7 @@ const socialLinks: SocialLinks[] = [
   },
   {
     name: "Download Resume",
-    link: "https://drive.usercontent.google.com/download?id=1A2B3C4D5E6F7G8H9I0J&export=download&authuser=0",
+    link: "https://drive.usercontent.google.com/download?id=1Lxtsgh9pccQ783fxKwHY7X1G-6ZrxwJk&export=download&authuser=0",
     icon: <Download color="white" />,
   },
 ];
@@ -34,12 +34,12 @@ const socialLinks: SocialLinks[] = [
 const Hero = () => {
   return (
     <div className={heroStyles.parallaxSection}>
-      <div className={heroStyles.heroContent}>
-        <p className={heroStyles.heroText}>
+      <div className={`${heroStyles.heroContent} ${heroStyles.fadeIn}`}>
+        <p className={`${heroStyles.heroText}`}>
           Hey, I’m Gowthaman — I build websites and frame moments through
           photography. This space is a blend of code and curiosity.
         </p>
-        <div className={heroStyles.socialLinks}>
+        <div className={`${heroStyles.socialLinks}`}>
           {socialLinks.map((platform, i) => (
             <a
               key={i}
