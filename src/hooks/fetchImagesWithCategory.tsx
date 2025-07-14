@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { CATEGORIES, ImagesData } from "../constants";
+import { CATEGORIES, imagesData, ImagesData } from "../constants";
 
 const API_BASE_URL = import.meta.env.VITE_BASE_URL; 
 
@@ -18,8 +18,7 @@ export const useImagesByCategory = (category: CATEGORIES) => {
           throw new Error(`Error this is not a proper category`)
         }
         const encodedCategory = encodeURIComponent(category);
-        // const encodedCategory = 'sdfkl';
-        const res = await fetch(`${API_BASE_URL}/category/${encodedCategory}`);
+        const res = await fetch(`${API_BASE_URL}/images/category/${encodedCategory}`);
 
         if (!res.ok) {
           throw new Error(`Error ${res.status}: ${res.statusText}`);
@@ -29,7 +28,7 @@ export const useImagesByCategory = (category: CATEGORIES) => {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
       } catch (err: any) {
         setError(err?.message || "Something went wrong");
-        setImages([]);
+        setImages(imagesData);
       } finally {
         setLoading(false);
       }
