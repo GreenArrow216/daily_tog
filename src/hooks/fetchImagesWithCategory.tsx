@@ -23,8 +23,8 @@ export const useImagesByCategory = (category: CATEGORIES) => {
         if (!res.ok) {
           throw new Error(`Error ${res.status}: ${res.statusText}`);
         }
-        const data = await res.json();
-        setImages(data);
+        // const data = await res.json();
+        setImages(imagesData);
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
       } catch (err: any) {
         setError(err?.message || "Something went wrong");
